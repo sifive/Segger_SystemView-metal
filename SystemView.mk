@@ -3,8 +3,7 @@
 # SPDX-License-Identifier: Apache-2.0 #
 #
 
-TMPVAR=$(abspath $(dir $(lastword ${MAKEFILE_LIST})))/SystemView
-SEGGER_SYSTEMVIEW_DIR := $(shell realpath --relative-to . $(TMPVAR))
+SEGGER_SYSTEMVIEW_DIR=$(dir $(word $(words $(MAKEFILE_LIST)),$(MAKEFILE_LIST)))/SystemView
 
 # ----------------------------------------------------------------------
 # CORE PART
