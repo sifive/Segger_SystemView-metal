@@ -10,5 +10,5 @@ endif
 # ----------------------------------------------------------------------
 # Includes Location
 # ----------------------------------------------------------------------
-override SEGGER_SYSTEMVIEW_INCLUDES := ${SEGGER_SYSTEMVIEW_DIR}/SystemView/SEGGER
-override SEGGER_SYSTEMVIEW_INCLUDES  += ${SEGGER_SYSTEMVIEW_DIR}/SystemView/Config
+override SEGGER_SYSTEMVIEW_INCLUDES := 	${SEGGER_SYSTEMVIEW_DIR}/SystemView/SEGGER \
+										${SEGGER_SYSTEMVIEW_DIR}/SystemView/Config
